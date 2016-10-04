@@ -5,17 +5,16 @@ var list = ""
 
 input1.keydown(function(e) {	
   if (e.keyCode == "13") {
-    console.log(list);
     var valueToSave = input1.val();    
     list = valueToSave + list
-    storeValue("katyasVariable1", valueToSave);
+    storeValue("katyasVariable1", list);
+    console.log(list);
   }
 })
 
 
 
 onNewValue("katyasVariable1", function(value) {
-  list = list + value
   $("#value-output1").html(list)
 })
 
