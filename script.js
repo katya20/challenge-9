@@ -14,8 +14,8 @@ input1.keydown(function(e) {
 
 
 onNewValue("katyasVariable1", function(value) {
-  list = value
-  $("#value-output1").html(value)
+  list = list + value
+  $("#value-output1").html(list)
 })
 
 
