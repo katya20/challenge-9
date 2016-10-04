@@ -1,12 +1,12 @@
 // First Value Input
 
 var input1 = $("#value-input1")
-var list = []
+var list = "test"
 
 input1.keydown(function(e) {	
   if (e.keyCode == "13") {
     var valueToSave = input1.val();    
-    var list = [valueToSave, " ", list]
+    list.push(valueToSave);
     storeValue("katyasVariable1", list);
     console.log(list);
   }
