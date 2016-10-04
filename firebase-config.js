@@ -8,6 +8,12 @@ firebase.initializeApp(firebaseConfig);
 
 var store = firebase.database().ref("challenge-2")
 
+var david = 1
+
+console.log(david)
+
+storeValue(
+
 function storeValue(name, value) {	
   var obj = {}
   obj[name] = value;
