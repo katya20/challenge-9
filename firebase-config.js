@@ -12,7 +12,10 @@ var david = 1
 
 console.log(david)
 
-storeValue(
+storeValue("david", 1)
+onNewValue("david", function(value) {
+  console.log(value)
+})
 
 function storeValue(name, value) {	
   var obj = {}
