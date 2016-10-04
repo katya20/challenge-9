@@ -1,9 +1,9 @@
 var input = $("#value-input")
 
-input.keydwn(function(e) {	
+input.keydown(function(e) {	
   if (e.keyCode == "13") {
     var valueToSave = input.val();
-    storeValue("katyasVariable", valueeeee);
+    storeValue("katyasVariable", valueToSave);
   }
 })
 
