@@ -21,3 +21,5 @@ function onNewValue(name, callback) {
     callback(data.val());
   })
 }
+
+function addValue(
