@@ -3,11 +3,11 @@ var input1 = $("#value-input1")
 input1.keydown(function(e) {	
   if (e.keyCode == "13") {
     var valueToSave = input1.val();
-    storeValue("katyasVariable", valueToSave);
+    storeValue("katyasVariable1", valueToSave);
   }
 })
 
-onNewValue("katyasVariable", function(value) {
+onNewValue("katyasVariable1", function(value) {
   $("#value-output1").html(value)
 })
 

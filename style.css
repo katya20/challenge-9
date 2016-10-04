@@ -7,3 +7,11 @@
   font-size: 24px;
   border: 2px solid lightblue;
 }
+
+#value-output1 {
+  float:left;
+}
+
+#value-output2 {
+  float: right;  
+}
