@@ -7,13 +7,12 @@ input1.keydown(function(e) {
   if (e.keyCode == "13") {
     var valueToSave = input1.val();    
     list.push(valueToSave);
-    storeValue("katyasVariable1", list);
+    storeValue("katyasVariable1", list.toString());
     console.log(list);
   }
 })
 
 onNewValue("katyasVariable1", function(value) {
-  console.log(value)
   $("#value-output1").html(value)
 })
 
