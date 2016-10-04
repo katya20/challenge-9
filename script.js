@@ -5,6 +5,7 @@ var input1 = $("#value-input1")
 input1.keydown(function(e) {	
   if (e.keyCode == "13") {
     var valueToSave = input1.val();
+    "1123,23"
     storeValue("katyasVariable1", valueToSave);
   }
 })
