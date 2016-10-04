@@ -22,4 +22,7 @@ function onNewValue(name, callback) {
   })
 }
 
-function addValue(
+function addValue(name, value) {
+  console.log(addValue);
+  
+}
