@@ -1,6 +1,6 @@
-var input = $("#value-input1")
+var input1 = $("#value-input1")
 
-input.keydown(function(e) {	
+input1.keydown(function(e) {	
   if (e.keyCode == "13") {
     var valueToSave = input1.val();
     storeValue("katyasVariable", valueToSave);
@@ -8,18 +8,20 @@ input.keydown(function(e) {
 })
 
 onNewValue("katyasVariable", function(value) {
-  $("#value-output").html(value)
+  $("#value-output1").html(value)
 })
 
-var input2 = $("#value-input1")
 
-input.keydown(function(e) {	
+
+var input2 = $("#value-input2")
+
+input2.keydown(function(e) {	
   if (e.keyCode == "13") {
-    var valueToSave = input.val();
+    var valueToSave = input2.val();
     storeValue("katyasVariable", valueToSave);
   }
 })
 
 onNewValue("katyasVariable", function(value) {
-  $("#value-output").html(value)
+  $("#value-output2").html(value)
 })
