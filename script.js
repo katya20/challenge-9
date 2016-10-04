@@ -13,6 +13,9 @@ onNewValue("katyasVariable1", function(value) {
   $("#value-output1").html(value)
 })
 
+addValue("katyasVariable1", input1) 
+
+
 // Second Value Input
 
 var input2 = $("#value-input2")
