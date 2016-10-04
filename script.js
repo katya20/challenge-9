@@ -1,4 +1,4 @@
-var input = $("#value-input")
+var input = $("#value-input1")
 
 input.keydown(function(e) {	
   if (e.keyCode == "13") {
