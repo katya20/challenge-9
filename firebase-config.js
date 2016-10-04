@@ -24,5 +24,4 @@ function onNewValue(name, callback) {
 
 function addValue(name, value) {
   console.log(addValue);
-  
 }
