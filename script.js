@@ -13,6 +13,7 @@ input1.keydown(function(e) {
 })
 
 onNewValue("katyasVariable1", function(value) {
+  console.log(value)
   $("#value-output1").html(value)
 })
 
