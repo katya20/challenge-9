@@ -1,7 +1,7 @@
 // First Value Input
 
 var input1 = $("#value-input1")
-var list = ["test"]
+var list = ["test"];
 
 input1.keydown(function(e) {	
   if (e.keyCode == "13") {
