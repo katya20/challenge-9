@@ -12,7 +12,7 @@ input1.keydown(function(e) {
 })
 
 onNewListItem("list1", function(value) {
-  $("#list-display").append("<div>" + value + "</div>")
+  $("#value-output1").append("<div>" + value + "</div>")
   console.log("hi");
   console.log(value);
 }) 

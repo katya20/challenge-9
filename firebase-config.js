@@ -22,6 +22,13 @@ function onNewValue(name, callback) {
   })
 }
 
-function addValue(name, value) {
-  console.log(addValue);
+function onNewListItem(name, callback) {		
+  store.child("vars" + "/" + name).on("child_added", function(data) {
+    callback(data.val())
+  })
 }
+
+function addListItem(name, value) {		
+  store.child("vars" + "/" + name).push(value)
+}
+
