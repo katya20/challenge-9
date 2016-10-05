@@ -6,13 +6,16 @@ var input1 = $("#value-input1")
 input1.keydown(function(e) {	
   if (e.keyCode == "13") {
     var valueToSave = input1.val();    
-    console.log(list);
+    addListItem("list1", valueToSave);
+    console.log(valueToSave);
   }
 })
 
-onNewValue("katyasVariable1", function(value) {
-  $("#value-output1").html(value)
-})
+onNewListItem("list1", function(value) {
+  $("#list-display").append("<div>" + value + "</div>")
+  console.log("hi");
+  console.log(value);
+}) 
 
 
 
